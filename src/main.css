@@ -1,0 +1,351 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+#content-nav {
+  position: relative;
+}
+
+#content-nav::after {
+  content: '';
+    position: absolute;
+    width: 25%;
+    top: 50%;
+    left: 10%;
+    background-color: #979797;
+    height: 1px;
+    z-index: 10;
+}
+
+#blur {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+}
+
+#circle {
+  transition: 0.5s;
+}
+
+#circle:hover {
+  box-shadow: hsl(0, 0%, 59%, 0.5) 0px 0px 0px 50px;
+}
+
+.active {
+  position: relative;
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: white;
+  left: 0;
+  top: 55px;
+}
+
+#nav li {
+  position: relative;
+  font-weight: 500;
+}
+
+#nav li:not(.active):before {
+  content: "";
+  position: absolute;
+  border-bottom: 5px solid white;
+  width: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.5rem;
+  transition: 0.2s;
+}
+
+#nav li:hover::before, #nav li:focus:before {
+  width: 100%;
+}
+
+#moon-parent {
+  margin-left: 10rem;
+}
+
+#text {
+  min-height: 252px;
+}
+
+#op {
+  opacity: 0.25;
+}
+
+.est {
+  margin-left: 2rem;
+}
+
+hr {
+  border-bottom: 1px solid #D0D6F9;
+  width: 85%;
+  opacity: 0.3;
+}
+
+#stats {
+  margin-bottom: 3rem;
+}
+
+.avg span:first-of-type {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+
+.avg span:last-of-type {
+  font-size: 28px;
+  letter-spacing: 0.1em;
+}
+
+.est {
+  margin-left: 5rem;
+}
+
+.est span:first-of-type {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+
+.est span:last-of-type {
+  font-size: 28px;
+  letter-spacing: 0.1em;
+}
+
+#moons {
+  width: 55%;
+}
+
+#moons span {
+  position: relative;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+}
+
+#moons span:not(.active-dest):before {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid white;
+  width: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  transition: 0.2s;
+}
+
+#moons span:hover::before, #moons span:focus:before {
+  width: 100%;
+}
+
+.active-dest {
+  position: relative;
+}
+
+.active-dest::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  left: 0;
+  top: 30px;
+}
+
+#dots {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 10%;
+  bottom: 7%;
+}
+
+#dots span {
+  width: 15px;
+  height: 15px;
+  background-color: #D0D6F9;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.17;
+  transition: 0.5s;
+}
+
+#dots span:hover {
+  opacity: 0.8;
+}
+
+.active-crew {
+  opacity: 1 !important;
+}
+
+#crew {
+  min-height: 440px;
+}
+
+#nums span {
+  border-radius: 50%;
+  border: 1px solid white;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+}
+
+#nums span:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+#nums span:not(.tech-active):hover {
+  background-color: #d0d6f93b;
+}
+
+.tech-active {
+  background-color: white;
+  color: #0B0D17 !important;
+}
+
+@media (max-width: 1024px) {
+  html,body{
+      overflow-x: hidden;
+  }
+
+  body {
+    background-image: url(../starter-code/assets/home/background-home-mobile.jpg);
+    min-height: 100vh;
+  }
+
+  .active::after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    left: 0;
+    top: 47px;
+}
+
+#content-nav::after {
+  content: '';
+  position: absolute;
+  width: 10%;
+  top: 50%;
+  left: 10%;
+  background-color: #979797;
+  height: 1px;
+  z-index: 10;
+}
+
+  #circle:hover {
+    box-shadow: hsl(0, 0%, 59%, 0.5) 0px 0px 0px 30px;
+  }
+
+  #blur {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(25px);
+  }
+
+  #moon-parent {
+    margin-left: 0rem;
+    margin-top: 5rem;
+  }
+
+  #moons {
+    width: 100%;
+  }
+
+  #text {
+    min-height: 312px;
+  }
+
+  .est {
+    margin-left: 0rem;
+    margin-top: 2rem;
+  }
+
+  #dots {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    transform: translateY(-22rem);
+  }
+
+  #crew {
+    min-height: 593px;
+  }
+
+  #crew div {
+    min-height: 284px;
+  }
+
+  .desk {
+    display: none !important;
+  }
+
+  #nums span {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  #nums span:not(:last-of-type) {
+    margin-bottom: 0rem;
+  }
+
+  #nav li:not(.active):before {
+    margin-top: 47px;
+  }
+}
+
+@media (max-width: 640px) {
+  html,body{
+    overflow-x: hidden;
+  }
+
+  .mob-nav {
+    transition: 0.5s;
+  }
+
+  .closed {
+    transform: translateX(40rem);
+  }
+
+  .active::after {
+    content: '';
+    position: absolute;
+    height: 150%;
+    width: 5px;
+    background-color: white;
+    left: 100%;
+    top: -25%;
+  }
+
+  #nav li:not(.active):before {
+    content: none;
+  }
+
+  #content-nav::after {
+    content: none;
+  }
+}

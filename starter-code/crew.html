@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link href="/dist/output.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+  <!-- ************ -->
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="bg-[url('/starter-code/assets/crew/background-crew-mobile.jpg')] lg:bg-[url('/starter-code/assets/crew/background-crew-desktop.jpg')] bg-no-repeat bg-cover">
+  <header class="w-full flex flex-col justify-start items-center min-w-375">
+    <div id="bg" class="max-w-5xl w-full flex flex-col justify-start items-center relative lg:max-w-screen-2xl">
+      <nav class="flex flex-row items-center justify-center w-full z-20 font-sans">
+        <div id="content-nav" class="w-[85%] flex flex-row items-center justify-between my-10 lg:my-4 relative">
+          <img src="./assets/images/logo.svg" alt="Logo">
+          <div id="menu" class="z-20 md:hidden lg:hidden">
+            <img src="./assets/images/menu.svg" alt="menu" class="menu cursor-pointer">
+            <img src="./assets/images/close.svg" alt="close" class="close hidden cursor-pointer">
+          </div>
+          <div id="blur" class="mob-nav closed fixed bg-White flex flex-col justify-start md:justify-center lg:justify-center items-center z-10 -top-10 h-[110vh] md:static lg:static md:h-auto lg:h-auto -right-8 w-[85%] md:flex lg:flex md:w-[85%] lg:w-2/3 md:py-8 lg:py-8">
+            <ul id="nav" class="flex flex-col text-White text-18 w-4/5 items-start md:items-center lg:items-center justify-center text-center translate-y-28 md:translate-y-0 lg:translate-y-0 my-8 md:flex-row lg:flex-row md:my-0 lg:my-0 md:justify-between lg:justify-between tracking-widest text-base">
+              <li class="text-lg md:text-sm lg:text-lg mb-8 md:mb-0 lg:mb-0"><a href="index.html" class="uppercase font-400"><span class="font-700 mr-4 md:mr-2 lg:mr-2">00</span>Home</a></li>
+              <li class="text-lg md:text-sm lg:text-lg mb-8 md:mb-0 lg:mb-0"><a href="destination.html" class="uppercase font-400"><span class="font-700 mr-4 md:mr-2 lg:mr-2">01</span>Destination</a></li>
+              <li class="text-lg md:text-sm lg:text-lg mb-8 md:mb-0 lg:mb-0  w-full md:w-auto lg:w-auto text-left active"><a href="crew.html" class="uppercase font-400"><span class="font-700 mr-4 md:mr-2 lg:mr-2">02</span>Crew</a></li>
+              <li class="text-lg md:text-sm lg:text-lg mb-8 md:mb-0 lg:mb-0"><a href="technology.html" class="uppercase font-400"><span class="font-700 mr-4 md:mr-2 lg:mr-2">03</span>Technology</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="w-full flex flex-col justify-start items-center min-w-375">
+    <div class="max-w-5xl w-full flex flex-col justify-start items-center lg:mt-10 lg:max-w-screen-2xl">
+      <section class="w-full flex flex-col justify-center items-center lg:w-[85%] lg:items-start relative">
+        <div class="flex flex-col items-center justify-center w-full lg:w-full text-center lg:text-left lg:items-start">
+          <p class="font-400 text-White mt-0 lg:mt-4 tracking-widest lg:leading-7 text-base lg:text-[28px] lg:w-3/4 font-sans uppercase"><span id="op" class="font-700">02</span> Meet your crew</p>
+        </div>
+        <div id="crew" class="flex flex-col-reverse items-center justify-center lg:justify-between mt-10 lg:mt-0 w-full lg:w-full text-center lg:flex-row lg:text-left lg:items-center">
+          <div id="text-com" class="w-[85%] lg:w-1/2 text-center lg:text-left">
+            <span class="text-Grey font-serif text-lg lg:text-3xl uppercase">Commander</span>
+            <h1 class="text-White text-2xl lg:text-6xl font-serif mt-2 lg:mt-6 uppercase">Douglas Hurley</h1>
+            <p class="font-400 text-Grey mt-6 text-[15px] lg:mt-4 lg:text-lg lg:w-3/4 font-sans leading-8">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+              and former NASA astronaut. He launched into space for the third time as 
+              commander of Crew Dragon Demo-2.</p>
+          </div>
+          <div id="text-spec" class="w-[85%] text-center lg:text-left lg:w-1/2 hidden">
+            <span class="text-Grey font-serif text-lg lg:text-3xl uppercase">Mission Specialist</span>
+            <h1 class="text-White text-2xl lg:text-6xl font-serif mt-2 lg:mt-6 uppercase lg:w-[115%]">MARK SHUTTLEWORTH</h1>
+            <p class="font-400 text-Grey mt-6 text-[15px] lg:mt-4 lg:text-lg lg:w-3/4 font-sans leading-8">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.</p>
+          </div>
+          <div id="text-pilot" class="w-[85%] text-center lg:text-left lg:w-1/2 hidden">
+            <span class="text-Grey font-serif text-lg lg:text-3xl uppercase">PILOT</span>
+            <h1 class="text-White text-2xl lg:text-6xl font-serif mt-2 lg:mt-6 uppercase">Victor Glover</h1>
+            <p class="font-400 text-Grey mt-6 text-[15px] lg:mt-4 lg:text-lg lg:w-3/4 font-sans leading-8">Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer.</p>
+          </div>
+          <div id="text-eng" class="w-[85%] text-center lg:text-left lg:w-1/2 hidden">
+            <span class="text-Grey font-serif text-lg lg:text-3xl uppercase">Flight Engineer</span>
+            <h1 class="text-White text-2xl lg:text-6xl font-serif mt-2 lg:mt-6 uppercase">Anousheh Ansari</h1>
+            <p class="font-400 text-Grey mt-6 text-[15px] lg:mt-4 lg:text-lg lg:w-3/4 font-sans leading-8">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.</p>
+          </div>
+          <hr class="mb-20 lg:hidden">
+          <img id="img-com" src="./assets/crew/image-douglas-hurley.webp" alt="douglas hurley" class="lg:w-[26%] w-[45%]">
+          <img id="img-spec" src="./assets/crew/image-mark-shuttleworth.webp" alt="mark shuttleworth" class="lg:w-[26%] w-[45%] hidden">
+          <img id="img-pilot" src="./assets/crew/image-victor-glover.webp" alt="victor glover" class="lg:w-[26%] w-[45%] hidden">
+          <img id="img-eng" src="./assets/crew/image-anousheh-ansari.webp" alt="anousheh ansari" class="lg:w-[26%] w-[45%] hidden">
+        </div>
+        <div id="dots">
+          <span id="com" class="active-crew"></span>
+          <span id="spec" class=""></span>
+          <span id="pilot" class=""></span>
+          <span id="eng" class=""></span>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="../src/crew.js"></script>
+</body>
+</html>
