@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="starter-code/assets/favicon-32x32.png">
+  <link href="dist/output.css" rel="stylesheet">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +18,10 @@
     <div id="bg" class="max-w-5xl w-full flex flex-col justify-start items-center relative lg:max-w-screen-2xl">
       <nav class="flex flex-row items-center justify-center w-full z-20 font-sans">
         <div id="content-nav" class="w-[85%] flex flex-row items-center justify-between my-10 lg:my-4 relative">
-          <img src="./assets/images/logo.svg" alt="Logo">
+          <img src="starter-code/assets/images/logo.svg" alt="Logo">
           <div id="menu" class="z-20 md:hidden lg:hidden">
-            <img src="./assets/images/menu.svg" alt="menu" class="menu cursor-pointer">
-            <img src="./assets/images/close.svg" alt="close" class="close hidden cursor-pointer">
+            <img src="starter-code/assets/images/menu.svg" alt="menu" class="menu cursor-pointer">
+            <img src="starter-code/assets/images/close.svg" alt="close" class="close hidden cursor-pointer">
           </div>
           <div id="blur" class="mob-nav closed fixed bg-White flex flex-col justify-start md:justify-center lg:justify-center items-center z-10 -top-10 h-[110vh] md:static lg:static md:h-auto lg:h-auto -right-8 w-[85%] md:flex lg:flex md:w-[85%] lg:w-2/3 md:py-8 lg:py-8">
             <ul id="nav" class="flex flex-col text-White text-18 w-4/5 items-start md:items-center lg:items-center justify-center text-center translate-y-28 md:translate-y-0 lg:translate-y-0 my-8 md:flex-row lg:flex-row md:my-0 lg:my-0 md:justify-between lg:justify-between tracking-widest text-base">
@@ -42,10 +42,10 @@
           <p class="font-400 text-White mt-0 lg:mt-4 tracking-widest lg:leading-7 text-base lg:text-[28px] lg:w-3/4 font-sans uppercase"><span id="op" class="font-700">01</span> Pick your destination</p>
         </div>
         <div class="flex flex-col items-center justify-center lg:justify-between mt-10 mb-0 lg:mt-20 lg:mb-10 w-full lg:w-full text-center lg:text-left lg:items-start lg:flex-row">
-          <img id="moon-img" class="w-1/2" src="assets/destination/image-moon.webp" alt="moon">
-          <img id="mars-img" class="w-1/2 hidden" src="assets/destination/image-mars.webp" alt="mars">
-          <img id="europa-img" class="w-1/2 hidden" src="assets/destination/image-europa.webp" alt="europa">
-          <img id="titan-img" class="w-1/2 hidden" src="assets/destination/image-titan.webp" alt="titan">
+          <img id="moon-img" class="w-1/2" src="starter-code/assets/destination/image-moon.webp" alt="moon">
+          <img id="mars-img" class="w-1/2 hidden" src="starter-code/assets/destination/image-mars.webp" alt="mars">
+          <img id="europa-img" class="w-1/2 hidden" src="starter-code/assets/destination/image-europa.webp" alt="europa">
+          <img id="titan-img" class="w-1/2 hidden" src="starter-code/assets/destination/image-titan.webp" alt="titan">
           <div id="moon-parent" class="w-[85%] lg:w-1/2 flex flex-col justify-center items-center lg:items-start">
             <div id="moons" class="uppercase text-Grey text-base font-sans flex flex-row justify-between items-center lg:items-start w-full">
               <span id="moon-dest" class="lg:mr-8 active-dest">Moon</span>
@@ -121,6 +121,6 @@
       </section>
     </div>
   </main>
-  <script src="../src/destination.js"></script>
+  <script src="./src/destination.js"></script>
 </body>
 </html>
